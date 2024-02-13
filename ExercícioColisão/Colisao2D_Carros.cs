@@ -12,17 +12,7 @@ class Carro
     // Implemente o método para verificar colisão entre dois carros
     public bool VerificarColisao(Carro outroCarro)
     {
-        /*
-        int soma = outroCarro.X + outroCarro.Largura;
-        Console.WriteLine("\n(X) " + X + "   <    " + soma + " (outroCarro.X + outroCarro.Largura)");
-        soma = X + Largura;
-        Console.WriteLine("(X + Largura) " + soma + "   >   " + outroCarro.X + " (outroCarro.X) ");
-        soma = outroCarro.Y + outroCarro.Altura;
-        Console.WriteLine("(Y) " + Y + "   <   " + soma + " (outroCarro.Y + outroCarro.Altura)");
-        soma = Y + Altura;
-        Console.WriteLine("(Y + Altura) " + soma + "   >   " + outroCarro.Y + " (outroCarro.Y)");
-        Console.WriteLine();
-        */
+
 
         int xInicial = X;
         int xFinal = X+Largura;
@@ -34,16 +24,7 @@ class Carro
         int yFinalOutroCarro = outroCarro.Y + Altura;
 
 
-/*
-        int xInicial = X-Largura/2;
-        int xFinal = X+Largura/2;
-        int yInicial = Y-Largura/2;
-        int yFinal = Y+Largura/2;
-        int xInicialOutroCarro = outroCarro.X - Largura/2;
-        int xFinalOutroCarro = outroCarro.X + Largura/2;
-        int yInicialOutroCarro = outroCarro.Y - Altura/2;
-        int yFinalOutroCarro = outroCarro.Y + Altura/2;
-*/       
+     
         Console.WriteLine("Carro na Area X: ("+xInicial+" → "+xFinal+"), Y: ("+yInicial+" → "+yFinal+")"+" Outro carro na Area X: ("+xInicialOutroCarro+" → "+xFinalOutroCarro+"), Y: ("+yInicialOutroCarro+" → "+yFinalOutroCarro+")");
       
 
